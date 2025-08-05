@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Autos - Xavi</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <!-- Header -->
+  <header class="bg-white shadow p-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold">Tu Cochera</h1>
+    <nav class="space-x-4">
+      <a href="#autos" class="hover:text-blue-500">Autos</a>
+      <a href="#creditos" class="hover:text-blue-500">Créditos</a>
+      <a href="#contacto" class="hover:text-blue-500">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+ <!-- Banner con logo y botón -->
+<section class="text-white py-20 text-center">
+  <img src="portada.jpg" alt="Tu Cochera" class="mx-auto mb-6 h-90">
+  <a href="#autos" class="mt-4 inline-block bg-white text-blue-600 font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-gray-100 transition">Encontrá tu auto</a>
+</section>
+
+
+  <!-- Autos destacados -->
+  <section id="autos" class="p-8">
+    <h3 class="text-2xl font-semibold mb-4">Autos destacados</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white p-4 rounded shadow">
+        <img src="IMG-20250522-WA0036.jpg" alt="Auto 1" class="mb-2 rounded">
+        <h4 class="font-bold">Fiat Strada Working D/C 2013</h4>
+        <p class="text-sm">$14.000.000 - 160.000 km</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <img src="IMG-20250523-WA0020.jpg" alt="Auto 2" class="mb-2 rounded">
+        <h4 class="font-bold">Peugeot 208 Allure Aut. 2021</h4>
+        <p class="text-sm">$23.000.000 - 68.000 km</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <img src="IMG-20250317-WA0042.jpg" alt="Auto 3" class="mb-2 rounded">
+        <h4 class="font-bold">VW Nivus 2021</h4>
+        <p class="text-sm">$26.500.000 - 60.000 km</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Créditos -->
+  <section id="creditos" class="bg-white p-8">
+    <h3 class="text-2xl font-semibold mb-4">Créditos accesibles</h3>
+    <p class="mb-4">Trabajamos con financieras amigas para que consigas tu auto incluso si no tenés todo el efectivo. Pedí una preaprobación rápida.</p>
+    <a href="https://prendo.ar/home" target="_blank" class="bg-blue-600 text-white px-6 py-2 rounded shadow hover:bg-blue-700">Solicitar crédito</a>
+  </section>
+
+  <!-- Publicidades -->
+  <section class="p-8">
+    <h3 class="text-2xl font-semibold mb-4">Publicidad de agencias</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <img src="veneranda.jpg" class="rounded shadow" alt="Publicidad 1">
+      <img src="motcor.jpg" class="rounded shadow" alt="Publicidad 2">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contacto" class="bg-gray-800 text-white p-6 text-center">
+    <p>&copy; 2025 Tu cochera - Todos los derechos reservados</p>
+    <p>Contacto: <a href="https://wa.me/5491123456789" target="_blank" class="underline">WhatsApp</a></p>
+  </footer>
+</body>
+</html>
