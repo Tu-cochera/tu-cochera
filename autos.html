@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Autos</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+
+  <!-- Filtros por marca -->
+  <h2 class="text-2xl font-bold mb-4">Filtrar por marca</h2>
+  <div class="grid grid-cols-3 sm:grid-cols-6 gap-4 mb-8">
+    <button class="brand-btn bg-white p-3 rounded-xl shadow-xl transform hover:scale-105 transition duration-300 overflow-hidden" data-brand="chevrolet">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Chevrolet-logo.png" alt="Chevrolet" class="mx-auto h-8 mb-2">
+      Chevrolet
+    </button>
+    <button class="brand-btn bg-white p-3 rounded-xl shadow-xl transform hover:scale-105 transition duration-300 overflow-hidden" data-brand="volkswagen">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Volkswagen_logo_2019.svg" alt="VW" class="mx-auto h-8 mb-2">
+      Volkswagen
+    </button>
+    <button class="brand-btn bg-white p-3 rounded-xl shadow-xl transform hover:scale-105 transition duration-300 overflow-hidden" data-brand="ford">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Ford_logo_flat.svg" alt="Ford" class="mx-auto h-8 mb-2">
+      Ford
+    </button>
+    <button class="brand-btn bg-white p-3 rounded-xl shadow-xl transform hover:scale-105 transition duration-300 overflow-hidden" data-brand="fiat">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/FIAT_logo_(2020).svg" alt="Fiat" class="mx-auto h-8 mb-2">
+      Fiat
+    </button>
+    <button class="brand-btn bg-white p-3 rounded-xl shadow-xl transform hover:scale-105 transition duration-300 overflow-hidden" data-brand="renault">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Renault_2021.svg" alt="Renault" class="mx-auto h-8 mb-2">
+      Renault
+    </button>
+    <button class="brand-btn bg-white p-3 rounded-xl shadow-xl transform hover:scale-105 transition duration-300 overflow-hidden" data-brand="all">
+      <span class="block font-bold">Ver todo</span>
+    </button>
+    <button class="brand-btn bg-white p-3 rounded-xl shadow-xl transform hover:scale-105 transition duration-300 overflow-hidden" data-brand="peugeot">
+      <img src="https://upload.wikimedia.org/wikipedia/fr/6/60/Logo_de_Peugeot_depuis_2010.svg" alt="Peugeot" class="mx-auto h-8 mb-2">
+      Peugeot
+    </button>
+    <button class="brand-btn bg-white p-3 rounded-xl shadow-xl transform hover:scale-105 transition duration-300 overflow-hidden" data-brand="honda">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Honda.svg" alt="Honda" class="mx-auto h-8 mb-2">
+      Honda
+    </button>
+    <button class="brand-btn bg-white p-3 rounded-xl shadow-xl transform hover:scale-105 transition duration-300 overflow-hidden" data-brand="nissan">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Nissan_2020_logo.svg" alt="Nissan" class="mx-auto h-8 mb-2">
+      Nissan
+    </button>
+    <button class="brand-btn bg-white p-3 rounded-xl shadow-xl transform hover:scale-105 transition duration-300 overflow-hidden" data-brand="citroen">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Citroen_logo.png" alt="Citroen" class="mx-auto h-8 mb-2">
+      Citroen
+    </button>
+    <button class="brand-btn bg-white p-3 rounded-xl shadow-xl transform hover:scale-105 transition duration-300 overflow-hidden" data-brand="toyota">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Toyota_Logo.svg" alt="Toyota" class="mx-auto h-8 mb-2">
+      Toyota
+    </button>
+    <button class="brand-btn bg-white p-3 rounded-xl shadow-xl transform hover:scale-105 transition duration-300 overflow-hidden" data-brand="otras">
+      <span class="block font-bold">Otras Marcas</span>
+    </button>
+  
+</div>
+
+  <!-- Catálogo de autos -->
+  <h2 class="text-2xl font-bold mb-4">Autos Destacados</h2>
+  <div id="autos-grid" class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+    <!-- Destacado 1 -->
+    <div class="auto-card bg-white p-4 rounded-xl shadow" data-brand="chevrolet">
+      <img src="IMG-20250522-WA0036.jpg" alt="Strada" class="w-full h-40 object-cover rounded-lg mb-2">
+      <h3 class="font-bold text-lg">Fiat Strada Working D/C</h3>
+      <p class="text-gray-600">2013 · $14.500.000</p>
+    </div>
+    <!-- Destacado 2 -->
+    <div class="auto-card bg-white p-4 rounded-xl shadow" data-brand="chevrolet">
+      <img src="IMG-20250903-WA0015.jpg" alt="Sandero" class="w-full h-40 object-cover rounded-lg mb-2">
+      <h3 class="font-bold text-lg">Renault Sandero</h3>
+      <p class="text-gray-600">2017 · $19.500.000</p>
+    </div>
+    <!-- Destacado 3 -->
+    <div class="auto-card bg-white p-4 rounded-xl shadow" data-brand="volkswagen">
+      <img src="IMG-20250317-WA0042.jpg" alt="Taos" class="w-full h-40 object-cover rounded-lg mb-2">
+      <h3 class="font-bold text-lg">Volkswagen Taos Highline</h3>
+      <p class="text-gray-600">2021 · $26.500.000</p>
+    </div>
+    <!-- Destacado 4 -->
+    <div class="auto-card bg-white p-4 rounded-xl shadow" data-brand="ford">
+      <img src="IMG-20250523-WA0020.jpg" alt="208" class="w-full h-40 object-cover rounded-lg mb-2">
+      <h3 class="font-bold text-lg">Peugeot 208 Allure Plus</h3>
+      <p class="text-gray-600">2021 · $23.000.000</p>
+    </div>
+    <!-- Destacado 5 -->
+    <div class="auto-card bg-white p-4 rounded-xl shadow" data-brand="fiat">
+      <img src="IMG-20250808-WA0011.jpg" alt="Fiat Siena" class="w-full h-40 object-cover rounded-lg mb-2">
+      <h3 class="font-bold text-lg">Fiat Siena</h3>
+      <p class="text-gray-600">2011 · $9.500.000</p>
+    </div>
+    <!-- Destacado 6 -->
+    <div class="auto-card bg-white p-4 rounded-xl shadow" data-brand="otras">
+      <img src="IMG-20250810-WA0002.jpg" alt="Cronos" class="w-full h-40 object-cover rounded-lg mb-2">
+      <h3 class="font-bold text-lg">Fiat Cronos</h3>
+      <p class="text-gray-600">2021 · $19.000.000</p>
+    </div>
+  </div>
+
+  <script>
+    // Seleccionar botones y autos
+    const brandBtns = document.querySelectorAll(".brand-btn");
+    const autos = document.querySelectorAll(".auto-card");
+
+    brandBtns.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const brand = btn.dataset.brand;
+        
+        autos.forEach(auto => {
+          if (brand === "all" || auto.dataset.brand === brand) {
+            auto.classList.remove("hidden");
+          } else {
+            auto.classList.add("hidden");
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
