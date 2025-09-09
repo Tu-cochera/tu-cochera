@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto – Tu Cochera</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md sticky top-0">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-red-600">Tu Cochera</h1>
+      <nav class="space-x-6">
+        <a href="index.html" class="hover:text-red-600">Inicio</a>
+        <a href="autos.html" class="hover:text-red-600">Autos</a>
+        <a href="creditos.html" class="hover:text-red-600">Créditos</a>
+        <a href="contacto.html" class="font-semibold text-red-600">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Formulario -->
+  <section class="container mx-auto px-6 py-12">
+    <h2 class="text-3xl font-bold mb-6 text-center">Contáctanos</h2>
+
+    <form action="https://formspree.io/f/XXXXXXXX" method="POST" class="max-w-lg mx-auto bg-white shadow-lg rounded-lg p-6 space-y-4">
+      <input type="text" name="nombre" placeholder="Nombre" required class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-red-500">
+      <input type="email" name="email" placeholder="Correo electrónico" required class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-red-500">
+      <input type="tel" name="telefono" placeholder="Teléfono" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-red-500">
+      <textarea name="mensaje" placeholder="Escribe tu mensaje..." required class="w-full border border-gray-300 rounded-lg p-3 h-32 focus:ring-2 focus:ring-red-500"></textarea>
+      
+      <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-3 rounded-lg shadow-md">
+        Enviar
+      </button>
+    </form>
+
+    <!-- Botones extra -->
+    <div class="flex justify-center gap-6 mt-8">
+      <a href="https://wa.me/5493534404779" target="_blank" class="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md">
+        WhatsApp
+      </a>
+      <a href="mailto:tuemail@ejemplo.com" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md">
+        Enviar Email
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-6 mt-12">
+    <div class="container mx-auto text-center text-sm">
+      &copy; 2025 Tu Cochera – Todos los derechos reservados
+    </div>
+  </footer>
+
+</body>
+</html>
