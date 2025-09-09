@@ -1,60 +1,115 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tienda de Autos - Xavi</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tu Cochera - Venta de Autos</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 text-gray-800">
-  <!-- Header -->
-  <header class="bg-white shadow p-4 flex justify-between items-center">
-    <h1 class="text-2xl font-bold">Tu Cochera</h1>
-    <nav class="space-x-4">
-      <a href="#autos" class="hover:text-blue-500">Autos</a>
-      <a href="#creditos" class="hover:text-blue-500">Créditos</a>
-      <a href="#contacto" class="hover:text-blue-500">Contacto</a>
-    </nav>
+<body class="font-sans bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-2xl font-bold text-red-600">Tu Cochera</h1>
+      <nav class="space-x-6">
+        <a href="autos.html" class="text-gray-700 hover:text-red-600">Autos</a>
+        <a href="creditos.html" class="text-gray-700 hover:text-red-600">Créditos</a>
+        <a href="contacto.html" class="text-gray-700 hover:text-red-600">Contactos</a>
+      </nav>
+    </div>
   </header>
 
-  <!-- Banner -->
- <!-- Banner con logo y botón -->
-<section class="text-white py-20 text-center">
-  <img src="Portada.jpg" alt="Tu Cochera" class="mx-auto mb-6 h-90">
-  <a href="#autos" class="mt-4 inline-block bg-white text-blue-600 font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-gray-100 transition">Encontrá tu auto</a>
-</section>
+  <!-- Hero -->
+  <section class="relative bg-gray-900 text-white">
+    <img src="Portada.jpg" alt="Portada" class="w-full h-96 object-cover opacity-70">
+    <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">Encontrá tu próximo auto</h2>
+      <p class="mb-6 text-lg">Los mejores autos al mejor precio</p>
+      <a href="autos.html" class="bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-6 rounded-lg shadow-lg">
+        Ver Autos
+      </a>
+    </div>
+  </section>
 
-
-  <!-- Autos destacados -->
-  <section id="autos" class="p-8">
-    <h3 class="text-2xl font-semibold mb-4">Autos destacados</h3>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="bg-white p-4 rounded shadow">
-        <img src="IMG-20250522-WA0036.jpg" alt="Auto 1" class="mb-2 rounded">
-        <h4 class="font-bold">Fiat Strada Working D/C 2013</h4>
-        <p class="text-sm">$14.000.000 - 160.000 km</p>
-      </div>
-      <div class="bg-white p-4 rounded shadow">
-        <img src="IMG-20250523-WA0020.jpg" alt="Auto 2" class="mb-2 rounded">
-        <h4 class="font-bold">Peugeot 208 Allure Aut. 2021</h4>
-        <p class="text-sm">$23.000.000 - 68.000 km</p>
-      </div>
-      <div class="bg-white p-4 rounded shadow">
-        <img src="IMG-20250317-WA0042.jpg" alt="Auto 3" class="mb-2 rounded">
-        <h4 class="font-bold">VW Nivus 2021</h4>
-        <p class="text-sm">$26.500.000 - 60.000 km</p>
-      </div>
+  <!-- Autos Destacados -->
+  <section class="container mx-auto py-12 px-6">
+    <h3 class="text-2xl font-bold text-center mb-8">Autos Destacados</h3>
+    <div class="grid md:grid-cols-3 gap-6">
+      <!-- Auto 1 -->
+      <a href="auto1.html" class="bg-white rounded-lg shadow-md hover:shadow-lg overflow-hidden">
+        <img src="IMG-20250522-WA0036.jpg" alt="Auto 1" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h4 class="font-semibold text-lg">Fiat Strada Working D/C 2013</h4>
+          <p class="text-gray-600">$14.500.000</p>
+        </div>
+      </a>
+      <!-- Auto 2 -->
+      <a href="auto2.html" class="bg-white rounded-lg shadow-md hover:shadow-lg overflow-hidden">
+        <img src="IMG-20250523-WA0020.jpg" alt="Auto 2" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h4 class="font-semibold text-lg">Peugeot 208 Allure Plus 2021</h4>
+          <p class="text-gray-600">$23.000.000</p>
+        </div>
+      </a>
+      <!-- Auto 3 -->
+      <a href="auto3.html" class="bg-white rounded-lg shadow-md hover:shadow-lg overflow-hidden">
+        <img src="IMG-20250317-WA0042.jpg" alt="Auto 3" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h4 class="font-semibold text-lg">VW Nivus 2021</h4>
+          <p class="text-gray-600">$26.500.000</p>
+        </div>
+      </a>
+    </div>
+    <div class="text-center mt-8">
+      <a href="autos.html" class="bg-gray-800 hover:bg-gray-900 text-white font-semibold py-3 px-6 rounded-lg shadow-md">
+        Ver más autos
+      </a>
     </div>
   </section>
 
   <!-- Créditos -->
-  <section id="creditos" class="bg-white p-8">
-    <h3 class="text-2xl font-semibold mb-4">Créditos accesibles</h3>
-    <p class="mb-4">Trabajamos con financieras amigas para que consigas tu auto incluso si no tenés todo el efectivo. Pedí una preaprobación rápida.</p>
-    <a href="https://prendo.ar/home" target="_blank" class="bg-blue-600 text-white px-6 py-2 rounded shadow hover:bg-blue-700">Solicitar crédito</a>
+  <section class="bg-red-50 py-12 px-6">
+    <div class="container mx-auto text-center">
+      <h3 class="text-2xl font-bold mb-4">Créditos</h3>
+      <p class="mb-6 text-gray-700">
+        Te ofrecemos planes de financiación flexibles y adaptados a tus necesidades.
+        Comprá hoy tu auto y pagalo en cómodas cuotas.
+      </p>
+      <a href="creditos.html" class="bg-red-600 hover:bg-red-700 text-white py-3 px-6 rounded-lg shadow-md">
+        Más información
+      </a>
+    </div>
   </section>
 
-  <!-- Publicidades -->
+  <!-- Quiénes somos -->
+  <section class="container mx-auto py-12 px-6">
+    <h3 class="text-2xl font-bold text-center mb-4">Quiénes Somos</h3>
+    <p class="text-center text-gray-700 max-w-2xl mx-auto">
+      En <span class="font-semibold text-red-600">Tu Cochera</span> nos dedicamos a acercarte
+      los mejores autos del mercado. Nuestro compromiso es ofrecer calidad, confianza
+      y el mejor servicio para que encuentres el vehículo ideal.
+      Podes comprar, vender o encontrar la financiacion a tu medida para tu nuevo vehiculo
+    </p>
+  </section>
+
+  <!-- Contacto -->
+  <section class="bg-gray-100 py-12 px-6">
+    <div class="container mx-auto text-center">
+      <h3 class="text-2xl font-bold mb-4">¿Querés contactarnos?</h3>
+      <p class="mb-6 text-gray-700">Hablá con nosotros por WhatsApp o completá el formulario.</p>
+      <div class="space-x-4">
+        <a href="contacto.html" class="bg-gray-800 hover:bg-gray-900 text-white py-3 px-6 rounded-lg shadow-md">
+          Ir a Contacto
+        </a>
+        <a href="https://wa.me/5491112345678" target="_blank" class="bg-green-600 hover:bg-green-700 text-white py-3 px-6 rounded-lg shadow-md">
+          WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+   <!-- Publicidades -->
   <section class="p-8">
     <h3 class="text-2xl font-semibold mb-4">Publicidad de agencias</h3>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -70,3 +125,4 @@
   </footer>
 </body>
 </html>
+
