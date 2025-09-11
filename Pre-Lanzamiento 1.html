@@ -1,0 +1,154 @@
+<!-- Landing Pre-Lanzamiento - Versión Oscura con estilo deportivo + fuentes Google Fonts -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu Cochera - Pre Lanzamiento</title>
+  <style>
+    /* Importar fuentes desde Google Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Orbitron:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
+    body {
+      font-family: 'Montserrat', Arial, sans-serif;
+      background: #0d0d0d;
+      color: #f5f5f5;
+      text-align: center;
+    }
+
+    header {
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
+    }
+
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      color: #ff1e1e; /* rojo deportivo */
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    #countdown {
+      font-size: 2rem;
+      margin: 20px 0;
+      color: #f5f5f5;
+      font-weight: bold;
+    }
+
+    p {
+      font-family: 'Poppins', sans-serif;
+      color: #cccccc;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    h2 {
+      font-family: 'Orbitron', sans-serif;
+      color: #ff1e1e;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    input, textarea, button {
+      padding: 12px;
+      border: 1px solid #333;
+      border-radius: 8px;
+      font-size: 1rem;
+      background: #1a1a1a;
+      color: #f5f5f5;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    button {
+      background: linear-gradient(135deg, #ff1e1e, #b30000);
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      letter-spacing: 1px;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: linear-gradient(135deg, #b30000, #800000);
+      transform: scale(1.05);
+    }
+
+    footer {
+      padding: 25px;
+      background: #1a1a1a;
+      margin-top: 50px;
+      color: #888;
+      font-size: 0.9rem;
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🚗 Tu Cochera abre en...</h1>
+    <div id="countdown">00d 00h 00m 00s</div>
+    <p>Muy pronto vas a poder encontrar y publicar autos de manera simple y rápida.</p>
+  </header>
+
+  <section>
+    <h2>¿Buscás algo en especial?</h2>
+    <form>
+      <input type="text" placeholder="Nombre" required>
+      <input type="text" placeholder="Contacto (WhatsApp o email)" required>
+      <textarea placeholder="Descripción" rows="3"></textarea>
+      <button type="submit">Enviar interés</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>¿Querés vender tu auto?</h2>
+    <form>
+      <input type="text" placeholder="Nombre" required>
+      <input type="text" placeholder="Contacto" required>
+      <textarea placeholder="Descripción" rows="3"></textarea>
+      <button type="submit">Publicar interés</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Tu Cochera – Lanzamiento oficial muy pronto</p>
+  </footer>
+
+  <script>
+    // Contador regresivo - fecha de lanzamiento
+    const launchDate = new Date("Oct 1, 2025 00:00:00").getTime();
+    const countdown = document.getElementById("countdown");
+
+    setInterval(() => {
+      const now = new Date().getTime();
+      const distance = launchDate - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      countdown.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+      if (distance < 0) {
+        countdown.innerHTML = "¡Ya abrimos!";
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
